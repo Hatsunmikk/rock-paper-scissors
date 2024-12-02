@@ -31,3 +31,7 @@ function getHumanChoice(){
 
     
 };
+
+//Variables to keep track of the scores
+let compScore = 0;
+let humanScore = 0;
