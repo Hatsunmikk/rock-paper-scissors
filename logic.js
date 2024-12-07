@@ -6,6 +6,18 @@ function playGame(){
      let compScore = 0;
      let humanScore = 0;
 
+     //Get DOM elements:
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById("paper");
+const scissorsBtn = document.getElementById("scissors");
+const result = document.getElementById("result");
+const scores = document.getElementById("scores");
+
+rockBtn.addEventListener('click', playRound());
+paperBtn.addEventListener('click', playRound());
+scissorsBtn.addEventListener('click', playRound());
+
+
      
     //Function to get a choice from the human
     function getHumanChoice(){
@@ -44,7 +56,7 @@ function playGame(){
         computerChoice = "scissors";
     };
 
-    alert(`The computer chose ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}.`);
+    
 
     return computerChoice;
    
@@ -88,10 +100,6 @@ function playRound (humanChoice, computerChoice){
        
 };
 
-//Button functionality:
-const rockBtn = document.getElementById("rock");
-const paperBtn = document.getElementById("paper");
-const scissorsBtn = document.getElementById("scissors");
 
 /*
 //Main game logic:
