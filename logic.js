@@ -36,16 +36,12 @@ scissorsBtn.addEventListener('click', function(){
     let computerChoice = Math.random();
     
     if(computerChoice < 0.37){
-        computerChoice = "rock";
+        return "rock";
     } else if (computerChoice <= 0.67){
-        computerChoice = "paper";
+        return "paper";
     } else {
-        computerChoice = "scissors";
+        return "scissors";
     };
-
-    
-
-    return computerChoice;
    
    
     
@@ -94,45 +90,7 @@ function playRound (humanChoice){
 };
 
 
-/*
-//Main game logic:
 
-for(let round = 0; round < 5; round++){
- 
-    //Variables that will act as parameters for playRound()
-    const humanSelection = getHumanChoice();
-
-    if(humanSelection === null){
-        break;
-    };
-
-    const compSelection = getComputerChoice();
-
-    const roundResult = playRound(humanSelection, compSelection);
-    if(roundResult === null){
-        round--;
-        continue;
-    }
-
-    humanScore = roundResult.humanScore;
-    compScore = roundResult.compScore;
-
-    if(humanScore > compScore){
-        alert(`You win! \n Human: ${humanScore} \n Computer: ${compScore}`);
-    } else if (compScore > humanScore){
-        alert(`Computer wins! \n Human: ${humanScore} \n Computer: ${compScore}`)
-    };
-  
-};
-
-//Deciding the winner at the end of the game and concluding with the score:
-
-if(humanScore > compScore){
-    alert(`You win the game! \n Human: ${humanScore} \n Computer: ${compScore}`);
-} else if (compScore > humanScore){
-    alert(`Computer wins the game! \n Human: ${humanScore} \n Computer: ${compScore}`)
-};
- */
 
 
 
