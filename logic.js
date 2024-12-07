@@ -84,16 +84,18 @@ function playRound (humanChoice){
          return;
     }
 
-    //Show result and score:
-    result.textContent = result;
-    scores.textContent = `Human: ${humanScore}  |  Computer: ${compScore}`;
+    //Display the round result and updated score:
+    displayResult(roundResult, humanScore, compScore);
 
+   
     //Checking for and deciding the winner:
     if(humanScore === 5){
         result.textContent = `You win! \n Human: 5  |  Computer: ${compScore} `;
+        disableButtons();
         reset();
     } else if (compScore === 5){
         result.textContent = `Computer wins! \n Human: ${humanScore}  |  Computer: 5 `;
+        disableButtons();
         reset();
     }
        
