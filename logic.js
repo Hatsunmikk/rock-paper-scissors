@@ -88,6 +88,7 @@ function playRound (humanChoice, computerChoice){
        
 };
 
+/*
 //Main game logic:
 
 for(let round = 0; round < 5; round++){
@@ -125,7 +126,7 @@ if(humanScore > compScore){
 } else if (compScore > humanScore){
     alert(`Computer wins the game! \n Human: ${humanScore} \n Computer: ${compScore}`)
 };
-
+ */
 
 
 
