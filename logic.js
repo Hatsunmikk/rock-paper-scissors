@@ -86,6 +86,15 @@ function playRound (humanChoice){
     //Show result and score:
     result.textContent = result;
     scores.textContent = `Human: ${humanScore}  |  Computer: ${compScore}`;
+
+    //Checking for and deciding the winner:
+    if(humanScore === 5){
+        result.textContent = `You win! \n Human: 5  |  Computer: ${compScore} `;
+        reset();
+    } else if (compScore === 5){
+        result.textContent = `Computer wins! \n Human: ${humanScore}  |  Computer: 5 `;
+        reset();
+    }
        
 };
 
@@ -105,7 +114,10 @@ function reset(){
 
 
 
-}
+};
+
+playGame();
+
 
 
 
