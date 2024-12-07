@@ -55,31 +55,31 @@ function playRound (humanChoice){
 
     const computerChoice = getComputerChoice();
 
-    let result = "";
+    let roundResult = "";
 
    
     //cases where the human wins
     if(humanChoice === "rock" && computerChoice === "scissors"){
-        result = "You win! Rock beats Scissors.";
+        roundResult = "You win! Rock beats Scissors.";
         humanScore += 1;
     } else if (humanChoice === "scissors" && computerChoice === "paper"){
-        result = "You win! Scissors beat Paper.";
+        roundResult = "You win! Scissors beat Paper.";
         humanScore += 1;
     } else if (humanChoice === "paper" && computerChoice === "rock"){
-        result = "You win! Paper beats Rock.";
+        roundResult = "You win! Paper beats Rock.";
         humanScore += 1;
 
     } else if(computerChoice === "rock" && humanChoice === "scissors"){     //cases where the computer wins
-        result = "Computer wins! Rock beats Scissors.";
+        roundResult = "Computer wins! Rock beats Scissors.";
         compScore += 1;
     } else if(computerChoice === "scissors" && humanChoice === "paper"){    
-        result = "Computer wins! Scissors beat Paper.";
+        roundResult = "Computer wins! Scissors beat Paper.";
         compScore += 1;
     } else if(computerChoice === "paper" && humanChoice === "rock"){    
-       result = "Computer wins! Paper beats Rock.";
+        roundResult = "Computer wins! Paper beats Rock.";
         compScore += 1;
     } else if(humanChoice === computerChoice){   //cases of tie
-        result = "It's a tie! Break it by choosing again.";
+        roundResult = "It's a tie! Break it by choosing again.";
          return null;
     }
 
