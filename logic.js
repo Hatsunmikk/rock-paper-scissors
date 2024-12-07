@@ -89,6 +89,16 @@ function playRound (humanChoice){
        
 };
 
+//Reset Game:
+function reset(){
+    setTimeout(() => {
+        humanScore = 0;
+        compScore = 0;
+        scores.textContent = "Human: 0  |  Computer: 0";
+        result.textContent = "New game started. Have another go at it!";
+    }, 2000); //a delay of 2 seconds before resetting
+}
+
 
 
 
