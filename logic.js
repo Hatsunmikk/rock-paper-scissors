@@ -80,7 +80,8 @@ function playRound (humanChoice){
         compScore += 1;
     } else if(humanChoice === computerChoice){   //cases of tie
         roundResult = "It's a tie! Break it by choosing again.";
-         return null;
+         displayResult(roundResult, humanScore, compScore);
+         return;
     }
 
     //Show result and score:
@@ -123,6 +124,8 @@ function reset(){
         rockBtn.disabled = false;
         paperBtn.disabled = false;
         scissorsBtn.disabled = false;
+
+
     
     }, 2000); //a delay of 2 seconds before resetting
 }
