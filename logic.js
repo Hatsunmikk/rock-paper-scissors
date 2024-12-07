@@ -120,6 +120,10 @@ function reset(){
         compScore = 0;
         scores.textContent = "Human: 0  |  Computer: 0";
         result.textContent = "New game started. Have another go at it!";
+        rockBtn.disabled = false;
+        paperBtn.disabled = false;
+        scissorsBtn.disabled = false;
+    
     }, 2000); //a delay of 2 seconds before resetting
 }
 
