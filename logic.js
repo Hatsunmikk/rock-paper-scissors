@@ -88,6 +88,11 @@ function playRound (humanChoice, computerChoice){
        
 };
 
+//Button functionality:
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById("paper");
+const scissorsBtn = document.getElementById("scissors");
+
 /*
 //Main game logic:
 
