@@ -1,4 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding : 0;
+    font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.info{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+
+}
+
+.moves {
+background-color: white ;
+display: flex;
+min-height: 250px;
+align-items: center;
+justify-content: center;
+gap: 60px;
+flex-grow: 1;
+flex-wrap: wrap;
+
+
+}
+
+button {
+   width: 150px;
+   height: 80px;
+   border: solid grey 2px;
+   border-radius: 20px;
+   background-color: white;
+   cursor: pointer;
+   transition: background-color 0.5s ease;
+   transition: color 0 ease;
+   font-size: 15px;
+   transition: border 0.1s ease;
+   margin: 10px;
+   
+   
+}
+
+#rock:hover {
+   background-color:rgb(233, 78, 78);
+   color: white;
+   border: none;
+   
+}
+
+#paper:hover {
+    background-color:rgb(128, 209, 125);
+    color: white;
+    border: none;
+    
+ }
+
+ #scissors:hover {
+    background-color:rgb(228, 207, 86);
+    color: white;
+    border: none;
+    
+ }
+
+.report {
+  background-color: white ;
+  display: flex;
+  min-height: 280px;
+  justify-content: start;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  
+
+}
+
+h1 {
+    font-size: 42px;
+    color: rgb(58, 56, 56);
+    text-align: center;
+    margin: 5px;
+
+}
+
+
+
+p{
+    font-size: 18px;
+    max-width: 300px;
+    max-height: 50px;
+    text-align: center;
+    word-spacing: 5px;
+    line-height: 25px;
+    color: rgb(65, 63, 63);
+    margin: 5px;
+   
+
+}
+
+#result {
+    margin: 20px;
+    margin-top: 50px;
+
+}
+
+#scores {
+   margin: 10px;
+}
+
