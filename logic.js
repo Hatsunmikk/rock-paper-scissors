@@ -98,6 +98,12 @@ function playRound (humanChoice){
        
 };
 
+function displayResult(roundResult, humanScore, compScore){
+    result.textContent = roundResult;
+    scores.textContent = `Human: ${humanScore}  |  Computer: ${compScore}`;
+
+}
+
 //Reset Game:
 function reset(){
     setTimeout(() => {
