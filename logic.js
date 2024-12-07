@@ -79,7 +79,9 @@ function playRound (humanChoice){
          return null;
     }
 
-    return {humanScore, compScore};
+    //Show result and score:
+    result.textContent = result;
+    scores.textContent = `Human: ${humanScore}  |  Computer: ${compScore}`;
        
 };
 
