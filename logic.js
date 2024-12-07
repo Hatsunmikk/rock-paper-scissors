@@ -13,9 +13,17 @@ const scissorsBtn = document.getElementById("scissors");
 const result = document.getElementById("result");
 const scores = document.getElementById("scores");
 
-rockBtn.addEventListener('click', playRound());
-paperBtn.addEventListener('click', playRound());
-scissorsBtn.addEventListener('click', playRound());
+rockBtn.addEventListener('click', function(){
+    playRound('rock');
+});
+
+paperBtn.addEventListener('click', function(){
+    playRound('paper');
+} );
+
+scissorsBtn.addEventListener('click', function(){
+    playRound('scissors');
+});
 
 
      
