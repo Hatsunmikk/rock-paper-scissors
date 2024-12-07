@@ -102,7 +102,16 @@ function displayResult(roundResult, humanScore, compScore){
     result.textContent = roundResult;
     scores.textContent = `Human: ${humanScore}  |  Computer: ${compScore}`;
 
-}
+};
+
+//To disable buttons after the game is over:
+function disableButtons(){
+    rockBtn.disabled = true;
+    paperBtn.disabled = true;
+    scissorsBtn.disabled = true;
+
+
+};
 
 //Reset Game:
 function reset(){
